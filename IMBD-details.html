@@ -88,7 +88,7 @@
                     </div>
                     <div class="offset-lg-1 col-lg-5">
                         <div class="portfolio_right_text mt-25">
-                            <h4 class="text-uppercase">Uber Case Study</h4>
+                            <h4 class="text-uppercase">IMDB Dataset(text-based analysis)</h4>
                             <p>
                                 <h5>Overview</h5>
                                 This case study delves into the analysis of Uber ride data to uncover insights into trip patterns, mileage trends, and ride purposes.
@@ -105,42 +105,34 @@
                 <p> 
                     <h5>Steps and Techniques</h5>
         
-                    <strong>1 . Data Cleaning and Preprocessing : </strong>
+                    <strong>1 . Environment Setup : </strong>
                     <ul>
-                        <li>Handled missing values in the dataset, particularly in the "PURPOSE" column, by replacing null values with "NOT AVAILABLE."</br></li>
-                        <li>Ensured data consistency by verifying data types and checking for duplicate or inconsistent records.</li>
+                        <li>Importing libraries such as numpy and pandas and listing files in the Kaggle input directory.</br></li>
                     </ul>    
                                     
-                    <strong>2 . Exploratory Data Analysis (EDA) : </strong>
+                    <strong>2 . Data Loading : </strong>
                     <ul>
-                        <li>Summarized key statistics, such as total mileage and the proportion of trips categorized as "Business" or "Personal."</br></li>
-                        <li>Created plots using matplotlib and seaborn to identify trends in trip times, locations, and distances traveled.</li>
+                        <li>The dataset is loaded from a CSV file located in the Kaggle directory (IMDB Dataset.csv).</li>
                     </ul>  
             
-                    <strong>3 . Insights Generation : </strong>
+                    <strong>3 . Exploratory Data Analysis (EDA) : </strong>
                     <ul>
-                        <li>Highlighted popular trip start and stop locations, indicating frequently visited areas.</br></li>
-                        <li>Analyzed the correlation between mileage and trip purpose to infer user behavior patterns.</li>
+                        <li>Viewing the first few rows of the dataset.</br></li>
+                        <li>Displaying individual reviews.</br></li>
+                        <li>Checking the dataset structure and data types using df.info().</li>
                     </ul>  
-
-
-
-
 
                 <p> <h5>Key Findings</h5>
 
-                    <strong>Dominant Categories :</strong> Business trips dominated the dataset, with a significant portion of rides lacking a specified purpose.</br>
-                    <strong>Popular Routes :</strong> Frequently traveled routes were concentrated in urban areas, indicating a high demand for rides within city limits.</br>
-                    <strong>Mileage Trends :</strong> The average trip mileage provided insights into the general distance covered per ride.</p>
-                
-                <p> <h5>Conclusion</h5>    
-                    
-                    This analysis showcases how raw transportation data can be transformed into actionable insights, enabling better understanding of user behavior and operational trends.
-                    These findings can support decisions in fleet management, route optimization, and customer engagement strategies.</p>
-
-                    <h5>Code link : </h5><a href="https://drive.google.com/file/d/1Dygi7Qfz_ubEX6TTvBEAEOS8aXWDv_R8/view?usp=sharing" target="_blank">Click here to access the code</a> 
-
-                                        
+                    <strong>Data Deduplication :</strong> Identifying and removing duplicate entries to ensure the dataset is clean and concise.</br>
+                    <strong>Subsetting :</strong> Reducing the dataset to a smaller sample (first 10,000 entries) for quicker analysis.</br>
+                    <strong>Text Preprocessing :</strong> <ul>
+                        <li>Converting all text to lowercase for uniformity.</li>
+                        <li>Stripping unnecessary whitespaces.</li>
+                        <li>Removing HTML tags from reviews using regex.</li>
+                        </ul></p>
+                <h5>Code link : </h5><a href="https://drive.google.com/file/d/1TcfhaWwOFh8761TLBk6Ry5Iwt4wVq1gE/view?usp=sharing" target="_blank">Click here to access the code</a>
+                 
             </div>
         </div>
     </section>
