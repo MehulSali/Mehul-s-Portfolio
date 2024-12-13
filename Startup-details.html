@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Portfolio Details</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/final logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Portfolio Details</h2>
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Banner Area =================-->
+
+	<!--================Start Portfolio Details Area =================-->
+	<section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_video" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                            <iframe 
+                                class="video-fluid" 
+                                width="100%" 
+                                height="300" 
+                                src="https://www.youtube.com/embed/Ssy1EfK5S-o" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <!-- Embed YouTube Video -->
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-25">
+                            <h4 class="text-uppercase">Startup Synergy Dashboard</h4>
+                            <p>
+                                <h5>Overview</h5>
+                                The Startup Synergy Dashboard is an interactive data analysis and visualization tool designed to uncover trends and insights from startup funding data. Built using Streamlit, the project leverages Python libraries like Pandas, Matplotlib, and Seaborn to present meaningful insights into funding trends, investor activities, and startup performance.</br>
+
+                                The application provides a comprehensive view of the startup ecosystem by analyzing key metrics, visualizing trends, and offering detailed information about specific startups and investors. It bridges the gap between raw data and actionable intelligence, making it a valuable resource for entrepreneurs, investors, and analysts.</p>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <h5>Purpose</h5>
+                    The application provides insights into startup funding trends by analyzing data from a cleaned dataset (startup_cleaned.csv).
+                    It supports both an overall view and detailed explorations of specific startups and investors. </p>
+
+                <p> 
+                    <h5>Key Features</h5>
+        
+                    <strong>1 . Overall Analysis : </strong>
+                    <ul>
+                        <li>Metrics Display : </li>
+                        <ul>
+                            <li>Total Funding: Displays the total funding amount.</br></li>
+                            <li>Maximum Funding: Shows the highest funding received by a startup.</br></li>
+                            <li>Average Ticket Size: Average funding amount per startup.</li>
+                            <li>Number of Funded Startups: Total number of unique startups funded.</li>
+                        </ul>
+                        <li>Visualizations : </li>
+                        <ul>
+                            <li>Month-on-Month (MoM) Trends: Line graph of funding totals or counts over time.</br></li>
+                            <li>Top 10 Funded Companies: Bar chart of the top 10 startups by funding amount.</br></li>
+                            <li>Year-wise Top Investments: Horizontal bar plot showcasing the highest-funded startup per year.</li>
+                            <li>Top 10 Funded Sectors: Pie chart of the most popular sectors.</li>
+                            <li>Top Funded Cities: Bar chart of cities receiving the highest funding.</li>
+                        </ul>    
+                    </ul> 
+
+                    <strong>2 . Investor Analysis : </strong>
+                    <ul>
+                        <li>Recent Investments : A table showing the 5 most recent investments by the selected investor.</li>
+                        <li>Biggest Investments : Bar chart of the largest investments made by the investor. </li>
+                        <li>Sector Analysis : Pie chart of sectors the investor has invested in.</li>
+                        <li>Year-on-Year (YoY) Investment Trends : Line graph of yearly investments by the investor.</li>
+                        <li>City-wise Investments : Bar chart of investment amounts by city.</li>
+                    </ul>  
+            
+                    <strong>3 . Startup Analysis : </strong>
+                    <ul>
+                        <li>Startup Details : Information about the industry, subindustry, location, and funding stage.</li>
+                        <li>Funding Rounds : Table of all funding rounds, including dates, investors, funding amounts, and stages.</li>
+                        <li>Funding Over Time : Line graph showing changes in funding amounts over time.</li>
+                        <li>Top Investors : Bar chart of the top investors contributing to the startup.</li>
+                    </ul>  
+
+                <p> <h5>Usage Scenario</h5>
+
+                    <strong>1 . General Trends : </strong>Use the "Overall Analysis" section to understand funding trends over time, popular sectors, and high-performing cities.</br>
+                    <strong>2 . Startup Focus : </strong>Explore individual startup performance, funding rounds, and top contributors in the "Startup" section.</br>
+                    <strong>3 . Investor Focus : </strong>Investigate specific investor activities, including their most significant investments and preferred sectors.</p>
+                
+                <p> <h5>Conclusion</h5>    
+                    
+                    This project showcases the power of data analytics in driving business insights and strategic decisions. 
+                    By transforming raw startup funding data into a user-friendly dashboard, it demonstrates skills in data manipulation, visualization, and web-based analytics tool development.</p>
+                    <h5>Code link : </h5><a href="https://drive.google.com/file/d/1Dygi7Qfz_ubEX6TTvBEAEOS8aXWDv_R8/view?usp=sharing" target="_blank">Click here to access the code</a> 
+
+                                        
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--================End Portfolio Details Area =================-->
+    
+    <!--================ Start Newsletter Area =================-->
+    
+    <!--================ End Newsletter Area =================-->
+        
+    <!--================Footer Area =================-->
+	<footer class="footer_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="footer_top flex-column">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="img/final logo.png" alt="">
+                            </a>
+                            <h4>Follow Me</h4>
+                        </div>
+                        <div class="footer_social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-code"></i></a>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_bottom justify-content-center">
+            
+            </div>
+        </div>
+    </footer>
+    <!--================End Footer Area =================-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
