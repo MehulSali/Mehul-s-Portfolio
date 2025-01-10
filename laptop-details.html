@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Portfolio Details</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.css" rel="stylesheet">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/final logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+
+							
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Portfolio Details</h2>
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Banner Area =================-->
+
+	<!--================Start Portfolio Details Area =================-->
+	<section class="portfolio_details_area section_gap">
+        <div class="container">
+            <div class="portfolio_details_inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left_video" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                            <iframe 
+                                class="video-fluid" 
+                                width="100%" 
+                                height="300" 
+                                src="https://www.youtube.com/embed/Ssy1EfK5S-o" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <!-- Embed YouTube Video -->
+                        </div>
+                    </div>
+                    <div class="offset-lg-1 col-lg-5">
+                        <div class="portfolio_right_text mt-25">
+                            <h4 class="text-uppercase">Laptop Data Cleaning and Transformation Using SQL</h4>
+                            <p>
+                                <h5>Overview</h5>
+                                This project demonstrates advanced SQL techniques for cleaning and transforming raw data into a structured format suitable for analysis. 
+                                The dataset contains information about laptops, including specifications like RAM, weight, and price.                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <h5>Objective</h5>
+                    The Laptop Data Cleaning and Transformation Using SQL project focuses on preparing raw laptop specifications data for analysis. The dataset contained several inconsistencies, such as units within numeric fields (e.g., 'GB', 'kg') and missing values. This project involved creating a clean and standardized version of the data using advanced SQL techniques. By addressing these challenges, 
+                    the dataset was transformed into a reliable and structured format suitable for further exploratory analysis and insights generation. </p>
+
+                <p> <h5>Key Findings</h5>
+                    <strong>1. Data Cleaning :</strong> 
+                        <ul>
+                            <li>Removed inconsistent units (e.g., 'GB', 'kg') for numeric fields.</br></li>
+                            <li>Converted data types to enhance usability (e.g., RAM to INTEGER, screen size to DECIMAL).</br></li>
+                
+                        </ul> 
+                    <strong>2. Data Transformation :</strong> 
+                        <ul>
+                            <li>Used Common Table Expressions (CTEs) for efficient updates.</br></li>
+                            <li>Standardized and normalized key attributes.</br></li>
+                            
+                        </ul> 
+                    <strong>3. Exploratory Analysis :</strong> <ul>
+                        <li>Identified missing or null values.</li>
+                        <li>Assessed dataset completeness.</li>
+                        </ul></p>
+                    <strong>4. Scalability :</strong>
+                        <ul>
+                            <li>Created a new table structure compatible with the original data.</br></li>
+                            <li>Ensured data integrity through robust SQL operations.</br></li>
+                           
+                        </ul>   
+                <div>
+                            <h2>SQL Code Snippet</h2>
+                            <pre><code class="language-sql">
+                    WITH updated_ram AS (
+                        SELECT `Unnamed: 0`, REPLACE(Ram, 'GB', '') AS new_Ram
+                        FROM laptop_backup
+                    )
+                    UPDATE laptop_backup l1
+                    JOIN updated_ram t
+                    ON l1.`Unnamed: 0` = t.`Unnamed: 0`
+                    SET l1.Ram = t.new_Ram;
+                    
+                    ALTER TABLE laptop_backup MODIFY COLUMN Ram INTEGER;
+                            </code></pre>
+                </div>
+                               
+                <p> 
+                    <h5>Conclusion</h5>    
+                    
+                    The project successfully demonstrates the importance of data cleaning and transformation in the data analysis pipeline. By leveraging SQL, 
+                    the raw laptop dataset was transformed into a well-structured format with consistent data types and no missing values.</br>
+                    <h5>Dataset link(Uncleaned) : </h5><a href="https://www.kaggle.com/datasets/ehtishamsadiq/uncleaned-laptop-price-dataset" target="_blank">Click here to access Dataset</a> 
+                
+                    <h5>Code link : </h5><a href="https://github.com/MehulSali/Startup-Synergy-Dashboard" target="_blank">Click here to access the code</a> 
+                </div>
+        </div>
+    </section>
+    
+    
+    <!--================End Portfolio Details Area =================-->
+    
+    <!--================ Start Newsletter Area =================-->
+    
+    <!--================ End Newsletter Area =================-->
+        
+    <!--================Footer Area =================-->
+	<footer class="footer_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="footer_top flex-column">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="img/final logo.png" alt="">
+                            </a>
+                            <h4>Follow Me</h4>
+                        </div>
+                        <div class="footer_social">
+                            <a href="https://www.linkedin.com/in/mehul-sali-ba051922b/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.hackerrank.com/profile/salimehul5"><i class="fa fa-code"></i></a>
+                            <a href="https://github.com/MehulSali"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer_bottom justify-content-center">
+            
+            </div>
+        </div>
+    </footer>
+    <!--================End Footer Area =================-->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.js"></script>
+</body>
+</html>
+</body>
+
+</html>
