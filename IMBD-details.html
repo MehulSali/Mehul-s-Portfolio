@@ -84,47 +84,71 @@
                     </div>
                     <div class="offset-lg-1 col-lg-5">
                         <div class="portfolio_right_text mt-25">
-                            <h4 class="text-uppercase">IMDB analysis(text-based Dataset)</h4>
+                            <h4 class="text-uppercase">Sentiment Analysis on Movie Reviews</h4>
                             <p>
                                 <h5>Overview</h5>
-                                This case study delves into the analysis of Uber ride data to uncover insights into trip patterns, mileage trends, and ride purposes.
-                                The dataset comprises 1,156 entries detailing rides taken by users, including trip start and end times, categories, and purposes.
-                            </p>
+                                TThis project focuses on analyzing sentiments (positive or negative) from the IMDB dataset containing 50,000 movie reviews. The workflow includes text cleaning, preprocessing, feature engineering, and visualization to uncover patterns in the data. 
+                                Using techniques like Bag of Words (BoW) and PCA, the study highlights how natural language processing (NLP) methods can transform unstructured text data into meaningful insights.                            </p>
                         </div>
                     </div>
                 </div>
                 <p>
                     <h5>Objective</h5>
-                    The primary goal of this analysis was to understand the distribution of trip categories, popular routes, and mileage patterns while addressing missing data effectively.
-                </p>
+                    To analyze and predict sentiments (positive or negative) from movie reviews in the IMDB dataset of 50,000 reviews using advanced NLP techniques.                </p>
 
                 <p> 
-                    <h5>Steps and Techniques</h5>
+                <h5>Steps and Techniques</h5>
         
-                    <strong>1 . Environment Setup : </strong>
+                <strong>1 . Data Cleaning : </strong>
                     <ul>
-                        <li>Importing libraries such as numpy and pandas and listing files in the Kaggle input directory.</br></li>
+                        <li>Removing duplicates: Ensured data integrity by dropping duplicate entries.</br></li>
+                        <li>Lowercasing: Converted all reviews to lowercase for uniformity.</br></li>
+                        <li>Removing HTML tags and URLs: Used regex to clean extraneous HTML content and links from the reviews.</br></li>
+                        <li>Expanding contractions: Transformed abbreviated words (e.g., "can't" to "cannot") to improve text readability.</br></li>
+                        <li>Spelling corrections: Corrected spelling errors using TextBlob.</br></li>
+                        
                     </ul>    
                                     
-                    <strong>2 . Data Loading : </strong>
+                <strong>2 . Text Preprocessing : </strong>
                     <ul>
-                        <li>The dataset is loaded from a CSV file located in the Kaggle directory (IMDB Dataset.csv).</li>
+                        <li>Punctuation removal: Stripped out punctuation to reduce noise.</br></li>
+                        <li>Tokenization: Split text into individual words using NLTK's word_tokenize.</br></li>
+                        <li>Stopword removal: Filtered out common stopwords like "and", "the", and "is" to focus on meaningful words.
+                        </br></li>
+                        
                     </ul>  
             
-                    <strong>3 . Exploratory Data Analysis (EDA) : </strong>
+                <strong>3 . Feature Engineering : </strong>
                     <ul>
-                        <li>Viewing the first few rows of the dataset.</br></li>
-                        <li>Displaying individual reviews.</br></li>
-                        <li>Checking the dataset structure and data types using df.info().</li>
+                        <li>Character and word lengths: Added features for the length of reviews to identify patterns in text length versus sentiment.</br></li>
+                        <li>N-grams: Extracted and analyzed bigrams and trigrams to capture context in word sequences.</br></li>
                     </ul>  
-                <p> <h5>Key Findings</h5>
-                    <strong>Data Deduplication :</strong> Identifying and removing duplicate entries to ensure the dataset is clean and concise.</br>
-                    <strong>Subsetting :</strong> Reducing the dataset to a smaller sample (first 10,000 entries) for quicker analysis.</br>
-                    <strong>Text Preprocessing :</strong> <ul>
-                        <li>Converting all text to lowercase for uniformity.</li>
-                        <li>Stripping unnecessary whitespaces.</li>
-                        <li>Removing HTML tags from reviews using regex.</li>
-                        </ul></p>
+                
+                <strong>4 . Visualization : </strong>
+                    <ul>
+                        <li>Word Clouds: Generated insightful word clouds for both positive and negative sentiments to highlight frequently used terms.
+                        </br></li>
+                        <li>Distribution Plots: Analyzed the relationship between sentiment and review length.</br></li>
+                    </ul>  
+
+                <strong>5 . Modeling : </strong>
+                    <ul>
+                        <li>Bag of Words (BoW): Created a feature matrix using unigrams, bigrams, and trigrams with CountVectorizer.</br></li>
+                        <li>Dimensionality Reduction: Reduced feature dimensions with PCA and visualized results with scatterplots.</br></li>
+                    </ul>  
+                
+                <strong>6 . Insights : </strong>
+                    <ul>
+                        <li>Positive reviews tended to use longer sentences with specific terms associated with positive sentiments.</br></li>
+                        <li>Negative reviews highlighted dissatisfaction through shorter, direct words.
+                        </br></li>
+                    </ul>  
+
+                <p> <h5>Conclusion</h5>   
+                    The case study provided valuable insights into the linguistic patterns of movie reviews. 
+                    It demonstrated the efficacy of NLP techniques in transforming raw text data into actionable sentiment predictions.   
+                </p>
+
                 <h5>Code link : </h5><a href="https://github.com/MehulSali/IMDB-Analysis" target="_blank">Click here to access the code</a>
             </div>
         </div>
