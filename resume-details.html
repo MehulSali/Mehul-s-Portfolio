@@ -40,7 +40,8 @@
 							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="Certificates.html">Certificates</a></li>
-                            
+
+							
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 						</ul>
 					</div>
@@ -75,7 +76,7 @@
                     <div class="col-lg-6">
                         <div class="left_image" style="display: flex; justify-content: center; align-items: center; height: 100%;">
                             <img 
-                                src="img/Funding-startups.png" 
+                                src="img/resume_image2.webp" 
                                 alt="Descriptive Alt Text" 
                                 style="max-width: 100%; height: auto; border: 0;" 
                             />
@@ -84,83 +85,63 @@
                     </div>
                     <div class="offset-lg-1 col-lg-5">
                         <div class="portfolio_right_text mt-25">
-                            <h4 class="text-uppercase">Startup Synergy Dashboard</h4>
+                            <h4 class="text-uppercase">ResumeScreen AI</h4>
                             <p>
                                 <h5>Overview</h5>
-                                The Startup Synergy Dashboard is an interactive data analysis and visualization tool designed to uncover trends and insights from startup funding data. Built using Streamlit, the project leverages Python libraries like Pandas, Matplotlib, and Seaborn to present meaningful insights into funding trends, investor activities, and startup performance.</br>
-
-                                The application provides a comprehensive view of the startup ecosystem by analyzing key metrics, visualizing trends, and offering detailed information about specific startups and investors. It bridges the gap between raw data and actionable intelligence, making it a valuable resource for entrepreneurs, investors, and analysts.</p>
+                                This project leverages machine learning and natural language processing (NLP) to streamline the recruitment process by automating resume screening, categorization, and providing personalized job recommendations.
+                                The system extracts key information from resumes, categorizes them into predefined categories, and matches candidates with relevant job openings—optimizing the hiring workflow for recruiters and improving the experience for candidates.                           
                         </div>
                     </div>
                 </div>
                 <p>
-                    <h5>Purpose</h5>
-                    The application provides insights into startup funding trends by analyzing data from a cleaned dataset (startup_cleaned.csv).
-                    It supports both an overall view and detailed explorations of specific startups and investors. </p>
-
+                    <h5>Project Description</h5>
+                    The traditional recruitment process can be tedious and prone to human bias. By integrating machine learning into recruitment, this project aims to revolutionize resume screening. 
+                    The solution automates key tasks such as parsing resumes, categorizing them, and suggesting job recommendations based on extracted data.
                 <p> 
-                    <h5>Key Features</h5>
-        
-                    <strong>1 . Overall Analysis : </strong>
-                    <ul>
-                        <li>Metrics Display : </li>
-                        <ul>
-                            <li>Total Funding: Displays the total funding amount.</br></li>
-                            <li>Maximum Funding: Shows the highest funding received by a startup.</br></li>
-                            <li>Average Ticket Size: Average funding amount per startup.</li>
-                            <li>Number of Funded Startups: Total number of unique startups funded.</li>
-                        </ul>
-                        <li>Visualizations : </li>
-                        <ul>
-                            <li>Month-on-Month (MoM) Trends: Line graph of funding totals or counts over time.</br></li>
-                            <li>Top 10 Funded Companies: Bar chart of the top 10 startups by funding amount.</br></li>
-                            <li>Year-wise Top Investments: Horizontal bar plot showcasing the highest-funded startup per year.</li>
-                            <li>Top 10 Funded Sectors: Pie chart of the most popular sectors.</li>
-                            <li>Top Funded Cities: Bar chart of cities receiving the highest funding.</li>
-                        </ul>    
-                    </ul> 
 
-                    <strong>2 . Investor Analysis : </strong>
+                <p> <h5>Project Goals</h5>
+
+                    <strong>Automate Resume Parsing :</strong> Extract key information like contact details, education, skills, and experience.</br>
+                    <strong>Resume Categorization :</strong> Classify resumes into job categories using machine learning.</br>
+                    <strong>Job Recommendations :</strong> Suggest suitable job openings for candidates based on their profiles.</p>
+                    
+
+
+
+                <h5>Key Features</h5>
+        
+                <strong>1 . Resume Parsing : </strong>
                     <ul>
-                        <li>Recent Investments : A table showing the 5 most recent investments by the selected investor.</li>
-                        <li>Biggest Investments : Bar chart of the largest investments made by the investor. </li>
-                        <li>Sector Analysis : Pie chart of sectors the investor has invested in.</li>
-                        <li>Year-on-Year (YoY) Investment Trends : Line graph of yearly investments by the investor.</li>
-                        <li>City-wise Investments : Bar chart of investment amounts by city.</li>
+                        <li>Utilizes NLP techniques to extract and structure key information from resumes (e.g., contact information, skills, work experience). This eliminates manual data entry and ensures accurate results.</li>
+                        
+                    </ul>    
+                                    
+                <strong>2 . Resume Categorization : </strong>
+                    <ul>
+                        <li>Machine learning algorithms classify resumes into specific categories defined by recruiters. For instance, resumes could be grouped by job function such as Data Science, Software Development, or Marketing.
+                        </li>    
                     </ul>  
             
-                    <strong>3 . Startup Analysis : </strong>
+                <strong>3 . Job Recommendations : </strong>
                     <ul>
-                        <li>Startup Details : Information about the industry, subindustry, location, and funding stage.</li>
-                        <li>Funding Rounds : Table of all funding rounds, including dates, investors, funding amounts, and stages.</li>
-                        <li>Funding Over Time : Line graph showing changes in funding amounts over time.</li>
-                        <li>Top Investors : Bar chart of the top investors contributing to the startup.</li>
+                        <li>The system uses machine learning to suggest relevant jobs to candidates based on their extracted skills and experiences, providing a personalized experience.</li>
+                        
                     </ul>  
-
-                <p> <h5>Usage Scenario</h5>
-
-                    <strong>1 . General Trends : </strong>Use the "Overall Analysis" section to understand funding trends over time, popular sectors, and high-performing cities.</br>
-                    <strong>2 . Startup Focus : </strong>Explore individual startup performance, funding rounds, and top contributors in the "Startup" section.</br>
-                    <strong>3 . Investor Focus : </strong>Investigate specific investor activities, including their most significant investments and preferred sectors.</p>
                 
                 <p> <h5>Conclusion</h5>    
-                    
-                    This project showcases the power of data analytics in driving business insights and strategic decisions. 
-                    By transforming raw startup funding data into a user-friendly dashboard, it demonstrates skills in data manipulation, visualization, and web-based analytics tool development.</p>
-                    <h5>Code link : </h5><a href="https://github.com/MehulSali/Startup-Synergy-Dashboard" target="_blank">Click here to access the code</a> 
-                    <h5>Live Website : </h5><a href="https://startup-synergy-dashboard-jp8vjj8bn9uatuc7tshqnx.streamlit.app/" target="_blank">Click here to access the Website</a>                        
-
+                    This project shows the potential of machine learning in recruitment. 
+                    By automating resume screening and recommending suitable jobs, it transforms how companies hire, making the process efficient, accurate, and candidate-friendly.   
+                
+                <h5>Code link : </h5><a href="https://github.com/MehulSali/Sms-Spam-Detection" target="_blank">Click here to access the code</a> 
+                 
             </div>
         </div>
     </section>
-    
-    
     <!--================End Portfolio Details Area =================-->
     
     <!--================ Start Newsletter Area =================-->
     
     <!--================ End Newsletter Area =================-->
-        
     <!--================Footer Area =================-->
 	<footer class="footer_area">
         <div class="container">
